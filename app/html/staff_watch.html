@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <title>Voice</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_head">
+          <div class="header_head_menu">
+            <ul>
+              <li><a href="index.html">Staff</a></li>
+              <li><a href="index.html">Users</a></li>
+              <li><a href="index.html">Tables</a></li>
+              <li><a href="index.html">Orders</a></li>
+              <li><a href="index.html">Citis</a></li>
+            </ul>
+          </div>
+
+          <div class="header_head_contacts">
+            <ul>
+              <li>+38 (066)-93-45-556</li>
+              <li>+38 (093)-45-93-556</li>
+            </ul>
+            <div class="header_images">
+              <a class="icon_link" href="https://web.telegram.org/#/login">
+                <svg class="svg-icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+
+              <a class="icon_link" href="https://www.instagram.com/">
+                <svg class="svg-icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+
+              <a class="icon_link" href="https://www.facebook.com/">
+                <svg class="svg-icon">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="header_head_authorization">
+              <!-- ADD THE $username -->
+              <a data-effect="mfp-zoom-out" id="log_out" href="index.html">Log out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section full_width">
+      <div class="container">
+        <div class="section_main">
+          <div class="section_main_table">
+            <div class="table table_staff">
+            <table id="tableID">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">FIO</th>
+                    <th scope="col">Telephone</th>
+                    <th scope="col">Birthday</th>
+                    <th scope="col">Type worker</th>
+                    <th scope="col">Password</th>
+                  </tr>
+                </thead>
+                <tbody id="tagBody">
+                  <tr>
+                    <td>
+                      <button name="editFunc" class="editF" ">
+                        E
+                      </button>
+                    </td>
+                    <td>
+                      <button name="delFunc" class="delF"">
+                        D
+                      </button>
+                    </td>
+                    <td contenteditable="false">Андреева Анастасия Юрьевна</td>
+                    <td contenteditable="false">669374609</td>
+                    <td contenteditable="false">26.06.2000</td>
+                    <td contenteditable="false">admin</td>
+                    <td contenteditable="false">admin1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button name="editFunc" class="editF" onclick="edit(this.id)">
+                        E
+                      </button>
+                    </td>
+                    <td>
+                      <button name="delFunc" class="delF" onclick="delte(this.id)">
+                        D
+                      </button>
+                    </td>
+                    <td contenteditable="false">Темчур Карина Алексеевна</td>
+                    <td contenteditable="false">985675555</td>
+                    <td contenteditable="false">28.02.1999</td>
+                    <td contenteditable="false">waiterA</td>
+                    <td contenteditable="false">waiterATemchur</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <button
+            class="buttonAddPerson"
+            id="addContactPerson"
+          >
+            Add person
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+</html>
+
+
+
